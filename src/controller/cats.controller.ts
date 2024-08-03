@@ -17,7 +17,7 @@ export class CatsController {
   }
 
   @Post('store')
-  store(@Req() request, @Res() response) {
+  store(@Req() request, @Res() response): void {
     response.status(201).json(request.body);
   }
 }
